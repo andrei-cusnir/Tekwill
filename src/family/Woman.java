@@ -4,15 +4,31 @@ public class Woman {
     private String name;
     private String lastName;
     private int age;
-    public Woman (){
 
+    public Woman() {
     }
-    public Woman(String name, String lastName , int age){
-     this.name = name;
-     this.lastName = lastName;
-     this.age = age;
+
+    public Woman(String name, String lastName, int age) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
     }
-    Woman woman1 = new Woman("Angelica" , "Ivanova" , 20);
-    Woman woman2 = new Woman("Helga","Titanium",35);
-    Woman woman3 = new Woman("Olga","Jandarm",18);
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String toString() {
+        return  "name='" + name + '\'' +
+                ", lastName='" + lastName;
+    }
 }
